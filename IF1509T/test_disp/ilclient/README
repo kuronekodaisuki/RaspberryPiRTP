@@ -1,0 +1,7 @@
+
+ ilclient library :
+
+Original Source codes from https://github.com/raspberrypi/userland.git
+
+ このフォルダに入っているソースは、オリジナルのソースコードから
+ ライブラリ部分のみのコードをまとめたものです。

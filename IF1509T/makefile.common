@@ -1,0 +1,11 @@
+all:: $(TARGET)
+
+%.o: %.c
+	@rm -f $@
+	$(CC) $(CFLAGS) -c $< -o $@ -Wno-deprecated-declarations
+
+$(TARGET): $(OBJS)
+	$(CC) $(CFLAGS) -o $@ $(OBJS) $(LDFLAGS)
+	
+clean::
+	rm -f $(OBJS) $(TARGET)
